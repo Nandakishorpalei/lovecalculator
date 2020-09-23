@@ -1,6 +1,6 @@
 var boy=prompt("what is your 👦 name ?");
 var girl=prompt("what is your pertners 👧 name ?");
-var total=Math.floor(Math.random()*10)+91;
+var total=Math.floor(Math.random()*91)+10;
 var boyname=boy.slice(0,1).toUpperCase()+boy.slice(1,boy.length).toLowerCase();
 var girlname=girl.slice(0,1).toUpperCase()+girl.slice(1,girl.length).toLowerCase();
   document.querySelectorAll("h1")[0].innerHTML="Your Name is " +boyname;
