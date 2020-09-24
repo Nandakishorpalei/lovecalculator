@@ -1,10 +1,10 @@
-var name= ["nanda","nandu","payal","nkp","pp"];
+var name= ["nanda","nandu","payal","nkp","pp","Nanda","Payal"];
 var boy=prompt("what is your 👦 name ?");
 var girl=prompt("what is your pertners 👧 name ?");
 var total=Math.floor(Math.random()*90)+10;
 var boyname=boy.slice(0,1).toUpperCase()+boy.slice(1,boy.length).toLowerCase();
 var girlname=girl.slice(0,1).toUpperCase()+girl.slice(1,girl.length).toLowerCase();
-var totalquote=[" Your True love stories never have endings."," you both together makes a perfect couple."," You're most alive when your partner is in your thoughts."," your Love is composed of a single soul inhabiting two bodies."," In your love the best thing  to hold onto in life is each other."," you realize you want to spend the rest of your life with somebody, you want the rest of your life to start as soon as possible." ," A loving heart is the truest wisdom."];
+var totalquote=[" Your True love stories never have endings."," you both together makes a perfect couple."," You're most alive when your partner is in your thoughts."," your Love is composed of a single soul inhabiting two bodies"," In your love the best thing  to hold onto in life is each other."," you realize you want to spend the rest of your life with somebody, you want the rest of your life to start as soon as possible." ," A loving heart is the truest wisdom."];
 var quote=Math.floor(Math.random()*totalquote.length);
 var quotetoshow=totalquote[quote];
   document.querySelectorAll("h1")[0].innerHTML="Your Name is " +boyname;
