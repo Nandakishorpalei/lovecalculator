@@ -10,7 +10,7 @@ var quotetoshow=totalquote[quote_no];
   document.querySelectorAll("h1")[0].innerHTML="Hey beautiful couple Welcome" ;
   document.querySelectorAll("h1")[1].innerHTML=  boyname +" ❤️ "+ girlname ;
  if(name.includes(boy) && name.includes(girl)){
- document.querySelectorAll("h1")[2].innerHTML="WOW " +boyname+" and " + girlname +"<br><br>" + "your love percentage is 100% <br><br> "   + quotetoshow + " <br>🥰🥰The perfect relationship is one where you can be weird with one another.🥰🥰";
+ document.querySelectorAll("h1")[2].innerHTML="WOW " +boyname+" and " + girlname +"<br><br>" + "your love percentage is 100% <br><br> "   + quotetoshow + " <br><br>🥰🥰The perfect relationship is one where you can be weird with one another.🥰🥰";
     }
 else if(total>=75){
   document.querySelectorAll("h1")[2].innerHTML="wowwwww "+boyname+" and " +girlname +" <br><br> your ❤ 🥰  percentage  is " +total +"% <br><br>" + quotetoshow ;
