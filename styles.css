@@ -1,11 +1,14 @@
 body{
   background-color: aqua;
+  width:80%;
+  margin-left: 10%;
+  text-align: center;
 }
 .bf{
   width:70%;
 }
 .gif{
-  margin: 100px 0 0 600px;;
+  margin-top: 100px;
 }
 img{
   height: 300px;
