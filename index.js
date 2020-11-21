@@ -1,25 +1,26 @@
- <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>NKP's Love calculator</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon (1).ico">
-  </head>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <body>
-    <div class="bg">
-      <h1><b><i>your</i></b></h1>
-      <h1><b><i>your</i></b></h1>
-      <h1><b>Hey, Lets Check Your Love </b></h1>
-      <div class="gif">
-        <img src="https://media.tenor.com/images/31ea85a2c92851b0f6ef68bca805a167/tenor.gif" alt="love">
-        </div>
-      </div>
-
-      <script src="index.js" charset="utf-8"></script>
-  </body>
-</html>
+var name= ["nanda","nandu","payal","nkp","pp","Nanda","Payal","NANDA","PAYAL","nanda kishor palei","payal palei","Nanda kishor palei","Payal palei"];
+var boy=prompt("what is your 👦 name ?");
+var girl=prompt("what is your pertners 👧 name ?");
+var total=Math.floor(Math.random()*90)+10;
+var boyname=boy.slice(0,1).toUpperCase()+boy.slice(1,boy.length).toLowerCase();
+var girlname=girl.slice(0,1).toUpperCase()+girl.slice(1,girl.length).toLowerCase();
+var totalquote=[" Your True love stories never have endings."," you both together makes a perfect couple."," You're most alive when your partner is in your thoughts."," your Love is composed of a single soul inhabiting two bodies"," In your love the best thing  to hold onto in life is each other."," As God’s blessing enriches you both, look to each other for strength" ," A loving heart is the truest wisdom."];
+var quote_no=Math.floor(Math.random()*totalquote.length);
+var quotetoshow=totalquote[quote_no];
+  document.querySelectorAll("h1")[0].innerHTML="Hey beautiful couple Welcome" ;
+  document.querySelectorAll("h1")[1].innerHTML=  boyname +" ❤️ "+ girlname ;
+ if(name.includes(boy) && name.includes(girl)){
+ document.querySelectorAll("h1")[2].innerHTML="WOW " +boyname+" and " + girlname +"<br><br>" + "your love percentage is 100% <br><br> "   + quotetoshow + " <br>🥰🥰The perfect relationship is one where you can be weird with one another.🥰🥰";
+    }
+else if(total>=75){
+  document.querySelectorAll("h1")[2].innerHTML="wowwwww "+boyname+" and " +girlname +" <br><br> your ❤ 🥰  percentage  is " +total +"% <br><br>" + quotetoshow ;
+}
+else if (total >=50 && total <=74){
+  document.querySelectorAll("h1")[2].innerHTML="that's quite impressive  "+boyname+ " and " + girlname +  "<br><br> your ❤ 🥰 percentage is " +total +"% <br><br>" + quotetoshow  ;
+}
+else if( total >=25 && total <=49){
+  document.querySelectorAll("h1")[2].innerHTML="Oops "+boyname+ " and " + girlname +  "<br><br> your ❤ 🥰 percentage is " +total +"%";
+}
+else {
+  document.querySelectorAll("h1")[2].innerHTML=boyname+ " and " + girlname +  "<br><br> you have to face issues. your ❤ 🥰 percentage is " +total +"%";
+}
