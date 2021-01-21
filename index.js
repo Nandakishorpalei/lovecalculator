@@ -1,4 +1,4 @@
-var name= ["nanda","nandu","payal","nkp","pp","Nanda","Payal","NANDA","PAYAL","nanda kishor palei","payal palei","Nanda kishor palei","Payal palei","twinkle","sarita","Twinkle","Sarita","chinku","Chinku","bijaya","Bijaya"];
+var name= ["nanda","nandu","payal","nkp","pp","Nanda","Payal","NANDA","PAYAL","nanda kishor palei","payal palei","Nanda kishor palei","Payal palei","twinkle","sarita","Sarita","Bijay","SARITA","BIJAY","Twinkle","Sarita","chinku","Chinku","bijaya","Bijaya"];
 var boy=prompt("what is your 👦 name ?");
 var girl=prompt("what is your pertners 👧 name ?");
 var total=Math.floor(Math.random()*90)+10;
